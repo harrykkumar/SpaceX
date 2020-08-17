@@ -1,0 +1,14 @@
+<div class="row bord scroll">
+    <div class="col-md-3 box-space" *ngFor="let item of listData; let i=index">
+      <div class="card card-wrapper radius">
+        <img src="{{item.links?.mission_patch_small}}" class="demo-img bord">
+          <div class="card-content">
+              <h4><a href="javascript:void(0);">{{item.mission_name}}#{{item.flight_number}}</a></h4>
+             <div> <label><b>Mission Ids:</b></label><span>{{item.mission_id}}</span></div>
+             <div> <label><b>Launch Year:</b></label><span>{{item.launch_year}}</span></div>
+             <div><label><b>Succesfull Launch:</b></label><span>{{item.launch_success}}</span></div>
+             <div><label><b>Succesfull Landing:</b></label><span>{{item.rocket.first_stage.cores[0].land_success}}</span></div>
+          </div>
+      </div>
+    </div>
+  </div>

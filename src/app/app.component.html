@@ -1,0 +1,61 @@
+<header class="header">
+  <span class='header_name'>SpaceX Launch Programs</span>
+</header>
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-md-2" style=" background: #eaeaea;">
+      <div class="sidenav" >
+        <div class="filter"><b>Filters</b></div>
+        <div class="launchyrs">Launch Year</div>
+        <ul style="list-style: none;">
+          <li style="padding-top: 7px;">
+               <Span routerLinkActive="active" [routerLink]="['/space', 2006]" (click)="filterdata(2006)"  class="lefttbn btn "><b>2006</b></Span> 
+               <Span routerLinkActive="active" [routerLink]="['/space', 2007]" (click)="filterdata(2007)" class="btn  rightbtn"><b>2007</b></Span></li>
+            <li style="padding-top: 7px;">
+                <Span routerLinkActive="active" [routerLink]="['/space', 2008]"  
+                (click)="filterdata(2008)"  class="lefttbn btn "><b>2008</b></Span> 
+                <Span routerLinkActive="active" [routerLink]="['/space', 2009]" (click)="filterdata(2009)" 
+                class="btn  rightbtn"><b>2009</b></Span></li>
+            <li style="padding-top: 7px;">
+                <Span routerLinkActive="active" [routerLink]="['/space', 2010]" (click)="filterdata(2010)"  class="lefttbn btn "><b>2010</b></Span> 
+                <Span routerLinkActive="active" [routerLink]="['/space', 2011]" (click)="filterdata(2011)" class="btn  rightbtn"><b>2011</b></Span></li>
+            <li style="padding-top: 7px;">
+                  <Span routerLinkActive="active" [routerLink]="['/space', 2012]" (click)="filterdata(2012)"  class="lefttbn btn "><b>2012</b></Span> 
+                  <Span routerLinkActive="active" [routerLink]="['/space', 2013]" (click)="filterdata(2013)" class="btn  rightbtn"><b>2013</b></Span></li>
+           <li style="padding-top: 7px;">
+                    <Span routerLinkActive="active" [routerLink]="['/space', 2014]" (click)="filterdata(2014)"  class="lefttbn btn "><b>2014</b></Span> 
+                    <Span routerLinkActive="active" [routerLink]="['/space', 2015]" (click)="filterdata(2015)" class="btn  rightbtn"><b>2015</b></Span></li>
+           <li style="padding-top: 7px;">
+                      <Span routerLinkActive="active" [routerLink]="['/space', 2016]" (click)="filterdata(2016)"  class="lefttbn btn "><b>2016</b></Span> 
+                      <Span  routerLinkActive="active" [routerLink]="['/space', 2017]" (click)="filterdata(2017)" class="btn  rightbtn"><b>2017</b></Span></li>
+            <li style="padding-top: 7px;">
+                        <Span routerLinkActive="active" [routerLink]="['/space', 2018]" (click)="filterdata(2018)"  class="lefttbn btn "><b>2018</b></Span> 
+                        <Span  routerLinkActive="active" [routerLink]="['/space', 2019]" (click)="filterdata(2019)" class="btn  rightbtn"><b>2019</b></Span></li>
+            <li style="padding-top: 7px;">
+                          <Span routerLinkActive="active" [routerLink]="['/space', 2020]" (click)="filterdata(2020)"  class="lefttbn btn "><b>2020</b></Span> 
+             </li>
+        </ul>
+        <div class="land_launch">Succesfull Launch</div>
+        <ul style="list-style: none;">
+          <li ><Span routerLinkActive="active"  [routerLink]="['/space', true]" (click)="launchdata(true)" class="lefttbn btn "><b>True</b></Span> 
+            <Span routerLinkActive="active" [routerLink]="['/space', false]" (click)="launchdata(false)" class="btn  rightbtn"><b>false</b></Span></li>
+        </ul>
+        <div class="land_launch">Succesfull Landing</div>
+        <ul style="list-style: none;">
+          <li ><Span routerLinkActive="active"  [routerLink]="['/space', 1]" (click)="landingdata(1)" class="lefttbn btn "><b>True</b></Span> 
+            <Span  routerLinkActive="active" [routerLink]="['/space', 0]" (click)="landingdata(0)" class="btn  rightbtn"><b>false</b></Span></li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="col-md-10">
+      <app-home></app-home>
+    </div>
+    </div>
+</div>
+<footer>
+  <p class="footer_name" > <strong>Developed by :</strong> Hari Kishan Kumhar</p>
+</footer>
+
+<!--<router-outlet></router-outlet>-->
