@@ -15,9 +15,9 @@ export class SpaceService {
   }
  
   postData(path: any, params: any): Observable<any> {
-    const body = params
-    return this.http.post(path, JSON.stringify(body))
+    return this.http.post(path, JSON.stringify(params))
   }
+  // post : two  param  string url and  input json 
   private getdataList = new Subject()
   
   sendData(data) {
