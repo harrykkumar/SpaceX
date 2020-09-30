@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { map,share, tap } from 'rxjs/operators';
-import { BehaviorSubject, Subject, Observable } from 'rxjs'
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {share } from 'rxjs/operators';
+import {Subject, Observable } from 'rxjs'
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
